@@ -18,7 +18,9 @@
     <url>https://www.bilibili.com/video/BV1yE411x7Ky</url>
 
     <properties>
-        <java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <mysql.version>8.0.25</mysql.version>
         <junit.version>4.13.2</junit.version>
         <log4j.version>1.2.17</log4j.version>
