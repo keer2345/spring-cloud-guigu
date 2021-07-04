@@ -1,7 +1,7 @@
 package com.guigu.springcloud.service.impl;
 
 import com.guigu.springcloud.dao.PaymentDao;
-import com.guigu.springcloud.entiy.Payment;
+import com.guigu.springcloud.entity.Payment;
 import com.guigu.springcloud.service.PaymentService;
 import org.springframework.stereotype.Service;
 
