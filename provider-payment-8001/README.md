@@ -58,7 +58,7 @@ Or:
 
 ## Developer tools
 
-1. Add dependencies:
+1. Add dependency:
 
 ```xml
 
