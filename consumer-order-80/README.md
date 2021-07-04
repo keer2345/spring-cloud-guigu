@@ -23,3 +23,4 @@ mvn spring-boot:run -pl consumer-order-80
 > curl http://127.0.0.1:8000/consumer/payment/get/15
 {"code":200,"message":"query successful","data":{"id":15,"serial":"ruby"}}% 
 ```
+

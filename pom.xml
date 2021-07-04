@@ -12,6 +12,7 @@
     <modules>
         <module>provider-payment-8001</module>
         <module>consumer-order-80</module>
+        <module>api-commons</module>
     </modules>
 
 
