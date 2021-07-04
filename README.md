@@ -15,3 +15,5 @@
 - [provide-payment-8001](https://github.com/keer2345/spring-cloud-guigu/blob/main/provider-payment-8001)
 - [consumer-order-8000](https://github.com/keer2345/spring-cloud-guigu/blob/main/consumer-order-80)
 - [api-commons](https://github.com/keer2345/spring-cloud-guigu/blob/main/api-commons)
+
+- [eureka-server-7001](https://github.com/keer2345/spring-cloud-guigu/blob/main/eureka-server-7001)
