@@ -1,3 +1,5 @@
+
+
 # Provider-payment-8001
 
 ## Database
@@ -108,6 +110,10 @@ public class PaymentMain8001 {
 ## appllication.yml
 
 ```yml
+spring:
+   application:
+      name: payment-service
+      
 eureka:
   client:
     #表示是否将自己注册进EurekaServer默认为true。

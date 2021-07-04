@@ -24,3 +24,5 @@ mvn spring-boot:run -pl consumer-order-80
 {"code":200,"message":"query successful","data":{"id":15,"serial":"ruby"}}% 
 ```
 
+# Eureka
+Configuration to reference: [provider-payment-8001](../provider-payment-8001/README.md)
