@@ -4,10 +4,7 @@ import com.guigu.springcloud.entity.CommonResult;
 import com.guigu.springcloud.entity.Payment;
 import com.guigu.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -16,10 +13,12 @@ import javax.annotation.Resource;
 public class PaymentController {
   @Resource private PaymentService paymentService;
 
-  @PostMapping(value = "/payment/create")
-  public CommonResult create(Payment payment) {
+  //  @PostMapping(value = "/payment/create")
+  @RequestMapping(method = RequestMethod.POST, value = "payment/create")
+  public CommonResult create(@RequestBody Payment payment) {
+    log.info("****JSON: " + payment);
     int result = paymentService.create(payment);
-    log.info("****插入结果: " + result);
+    log.info("****Insert result: " + result);
     if (result > 0) {
       return new CommonResult(200, "insert successful", result);
     } else {
@@ -27,10 +26,11 @@ public class PaymentController {
     }
   }
 
-  @GetMapping(value = "/payment/get/{id}")
+  //  @GetMapping(value = "/payment/get/{id}")
+  @RequestMapping(method = RequestMethod.GET, value = "/payment/get/{id}")
   public CommonResult getPaymentById(@PathVariable("id") Long id) {
     Payment payment = paymentService.getPaymentById(id);
-    log.info("****查询结果: " + payment);
+    log.info("****Querty result: " + payment);
     if (payment != null) {
       return new CommonResult(200, "query successful", payment);
     } else {
