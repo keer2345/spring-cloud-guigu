@@ -17,3 +17,4 @@
 - [api-commons](https://github.com/keer2345/spring-cloud-guigu/blob/main/api-commons)
 
 - [eureka-server-7001](https://github.com/keer2345/spring-cloud-guigu/blob/main/eureka-server-7001)
+- [eureka-server-7002](https://github.com/keer2345/spring-cloud-guigu/blob/main/eureka-server-7002)
