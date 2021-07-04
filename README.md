@@ -10,3 +10,5 @@
 - 服务配置: ~~Config~~, Nacos
 - 服务总线: ~~Bus~~, Nacos
 
+# Moudules
+- [provide-payment-8001](https://github.com/keer2345/spring-cloud-guigu/blob/main/provider-payment-8001)
