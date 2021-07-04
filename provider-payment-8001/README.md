@@ -21,6 +21,14 @@ CREATE TABLE `payment`  (
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '支付表' ROW_FORMAT = Dynamic;
 ```
 
+## Run
+
+Run at parent *pom.xml* directory:
+
+```shell
+mvn spring-boot:run -pl provider-payment-8001
+```
+
 ## Test
 
 We can using *Postcode* plugin in VSCode, or use *curl*:
@@ -47,3 +55,28 @@ Or:
 > curl http://127.0.0.1:8001/payment/get/1
 {"code":200,"message":"query successful","data":{"id":1,"serial":"java"}}
 ```
+
+## Developer tools
+
+1. Add dependencies:
+
+```xml
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <scope>runtime</scope>
+    <optional>true</optional>
+</dependency>
+```
+
+2. IDEA -> Build, Execution, Deployment -> Compiler
+    - Automatically show first error in editor
+    - Display notification on build completion
+    - Build project automatically
+    - Compile independent modules in parallel
+
+3. Double `Shift` in IDEA, search `Registry...`, then check:
+    - `compiler.automake.allow.when.app.running`
+    - `actionSystem.assertFocusAccessFormEdt`
+   
